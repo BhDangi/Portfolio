@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,40 @@
 </head>
 <body>
     
-    <!-- Loading animation-->
-    <div class="loader-wrapper">
-        <div class="loader">
-            <div class="loader-text">B.D.</div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-        </div>
-    </div>
+    <!-- Loading Animation -->
+    <div th:replace="~{fragments/loader :: loader}"></div>
+
+    <!-- Background Shapes -->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+
+    <!-- Header -->
+    <div th:replace="~{fragments/header :: site-header}"></div>
+
+    <!-- Hero Section -->
+    <div th:replace="~{fragments/hero :: hero-section}"></div>
+
+    <!-- About Section -->
+    <div th:replace="~{fragments/about :: about-section}"></div>
+
+    <!-- Projects Section -->
+    <div th:replace="~{fragments/projects :: projects-section}"></div>
+
+    <!-- Experience Section -->
+    <div th:replace="~{fragments/experience :: experience-section}"></div>
+
+    <!-- Achievements Section -->
+    <div th:replace="~{fragments/achievements :: achievements-section}"></div>
+
+    <!-- Contact Section -->
+    <div th:replace="~{fragments/contact :: contact-section}"></div>
+
+    <!-- Footer -->
+    <div th:replace="~{fragments/footer :: footer-section}"></div>
+    
+
+    <!-- custom script file-->
+    <script src="/js/script.js"></script>
 </body>
 </html>
