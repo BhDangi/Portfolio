@@ -1,75 +1,200 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
 <th:block th:fragment="about-section">
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="section-title-container">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">
-                    Get to know more about my background, skills, and what drives me
-                </p>
-            </div>
-            <div class="about-container">
-                <div class="about-content">
-                    <div class="about-tagline">My Background</div>
-                    <h3 class="about-heading">Developer by Profession, Teacher by Passion.</h3>
-                    <p class="about-text">
-                        I'm Bhavesh Dangi — a passionate software developer who loves solving complex real-world problems through clean, efficient code. With hands-on experience in building full-stack applications using technologies like Java, Spring Boot, React, and MySQL, I’ve dedicated my career to creating impactful digital solutions that are both scalable and user-friendly.
-                    </p>
-                    <p class="about-text">
-                        While development is my profession, teaching is my true passion. Through my YouTube channel <strong>@engineertalkswithan</strong> and Udemy courses, I’ve helped thousands of students and professionals gain practical knowledge in programming and software development. My mission is to break down complex concepts and make learning approachable for everyone, whether you're just starting out or looking to upskill.
-                    </p>
-                    <p class="about-text">
-                        As a mentor and guide, I’ve also supported numerous learners through platforms like Topmate, offering career guidance, project mentorship, and personalized tech support. I believe in empowering others through knowledge, and I’m committed to building a community that thrives on learning, innovation, and mutual growth.
-                    </p>
-                    <!-- Keep rest of the content unchanged -->
-                    <div class="skills-container">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-java"></i></div>
-                            <div class="skill-name">Java</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <div class="skill-name">Spring Boot</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js"></i></div>
-                            <div class="skill-name">JavaScript</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-react"></i></div>
-                            <div class="skill-name">React</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <div class="skill-name">SQL</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
-                            <div class="skill-name">MySQL</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
-                            <div class="skill-name">AWS</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
-                            <div class="skill-name">Git</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="about-image-container">
-                        <div class="about-image-bg"></div>
-                        <img src="/images/hero-section.jpg" alt="About" class="about-image">
-                    </div>
-                    <div class="about-decorations">
-                        <div class="about-decoration"></div>
-                        <div class="about-decoration"></div>
-                    </div>
-                </div>
-            </div>
+  <section class="section about" id="about">
+    <div class="container">
+        <div class="section-title-container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know more about my background, skills, and what drives me</p>
         </div>
-    </section>
+
+        <div class="about-container">
+            <!-- About Content -->
+            <div class="about-content">
+                <div class="about-tagline">About Me</div>
+                <h3 class="about-heading">Software Developer | Automation Engineer | AI Enthusiast</h3>
+
+                <p class="about-text">
+                    I'm <strong>Bhavesh Dangi</strong>, a final-year Computer Engineering student at Presidency University, Bangalore,
+                    graduating in May 2025 with a minor in Artificial Intelligence and Machine Learning (CGPA: 8.01).
+                    I’m passionate about building impactful digital solutions that combine clean code, scalability, and innovation.
+                </p>
+
+                <p class="about-text">
+                    Currently, I work as an <strong>Automation Engineer at LG Soft India</strong>, designing large-scale automation
+                    frameworks for Smart TVs with CI/CD pipelines, Docker, MySQL-driven schedulers, and LLM-powered visual validation
+                    to accelerate testing efficiency and boost release velocity.
+                </p>
+
+                <p class="about-text">
+                    Previously, as an <strong>AI Software Intern at Soven</strong>, I engineered NLP pipelines using transformer models
+                    (BERT, Attention) to automate requirement analysis and dependency mapping, improving project planning efficiency significantly.
+                </p>
+
+                <p class="about-text">
+                    Beyond work, I’ve built full-stack projects like <strong>AgriDirect</strong>, a farmer-to-buyer marketplace, and
+                    <strong>Wanderlust</strong>, a hotel booking platform with AI chatbot integration. These projects reflect my
+                    ability to integrate ReactJS, Spring Boot, MySQL/PostgreSQL, and cloud platforms like AWS to deliver real-world solutions.
+                </p>
+
+                <p class="about-text">
+                    I’m also a problem solver, having solved 300+ LeetCode and 500+ DSA problems, and a continuous learner with a
+                    <strong>Google Cloud Generative AI Certification</strong>. My mission is to grow as a developer while creating
+                    technology that empowers people and drives innovation.
+                </p>
+
+                <!-- Skills -->
+                <div class="skills-container">
+                    <!-- Languages -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java">
+                        </div>
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
+                        </div>
+                        <div class="skill-name">SQL</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        </div>
+                        <div class="skill-name">HTML5</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        </div>
+                        <div class="skill-name">CSS3</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                        </div>
+                        <div class="skill-name">Linux</div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                        </div>
+                        <div class="skill-name">Spring Boot</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS">
+                        </div>
+                        <div class="skill-name">ReactJS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        </div>
+                        <div class="skill-name">PostgreSQL</div>
+                        </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        </div>
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                        </div>
+                        <div class="skill-name">NodeJS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="NextJS">
+                        </div>
+                        <div class="skill-name">NextJS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/rest-api-icon.png" alt="REST API Icon">
+                        </div>
+                        <div class="skill-name">REST API</div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_Web_Services_Logo.svg" alt="AWS Logo">
+                        </div>
+                        <div class="skill-name">AWS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+                        </div>
+                        <div class="skill-name">Postman</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/New_Power_BI_Logo.svg" alt="Power BI Logo">
+                        </div>
+                        <div class="skill-name">Power BI</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                        </div>
+                        <div class="skill-name">Azure</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        </div>
+                        <div class="skill-name">Docker</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira">
+                        </div>
+                        <div class="skill-name">Jira</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        </div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Image Section -->
+        <div class="about-visual">
+          <div class="about-image-container">
+            <div class="about-image-bg"></div>
+            <img th:src="@{/images/hero-section.jpg}" alt="About" class="about-image">
+          </div>
+          <div class="about-decorations">
+            <div class="about-decoration"></div>
+            <div class="about-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </th:block>
-</html>
